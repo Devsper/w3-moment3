@@ -1,0 +1,29 @@
+// Placeholder selector
+%no-margin{
+    margin: 0;
+}
+
+.image-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-caption{
+    @extend %no-margin;
+}
+
+.image-container{
+    flex-basis: 50%;
+}
+
+.image-text{
+    flex-basis: 45%;
+}
+
+.image-left{
+    @include brandBorder(right, 15px);
+}
+
+.image-right{
+    @include brandBorder(left, 15px);
+}

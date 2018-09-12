@@ -3,14 +3,14 @@
     margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6{
-    @include headingFonts(true);
-    @extend %no-margin;
+.h1,.h2,.h3,.h4,.h5,.h6{
+    @include headingFonts();
     color: white;
 }
 
-h1{
+.h1{
     text-align: center;
+    @extend %no-margin;
     line-height: $headerHeight - $navHeight; // Centers text vertically grabbing values
 }
 
@@ -19,7 +19,7 @@ p{
     font-size: 17px;
 }
 
-h2,h3,h4,h5,h6{
+.h2,.h3,.h4,.h5,.h6{
     background: $secondaryColor;
     display: inline-block;
     padding: 10px;

@@ -1,0 +1,38 @@
+%rec{
+    border: 10px solid $brandColor;
+    background: $secondaryColor;
+}
+
+%elementSize{
+    width: 100px;
+    height: 100px;
+}
+
+.shapes-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle{
+    @extend %rec;
+    @extend %elementSize;
+}
+
+.square{
+    @extend %rec;
+    @extend %elementSize;
+    border-radius: 50%;
+}
+
+.rectangle{
+    @extend %rec;
+    width: 200px;
+    height: 100px;
+}
+
+.rhombus{
+    @extend %rec;
+    height: 80px;
+    width: 80px;
+    transform: rotate(45deg);
+}

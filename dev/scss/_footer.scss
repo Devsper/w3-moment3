@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background: $footerColor;
+    @include contentPadding();
+    height: 150px;
+    width: 100%;
+}
+
+.footer-area{
+    width: 20%;
+    border: 2px solid lighten($footerColor, 5);
+}
+
+.footer-heading{
+    @include headingFonts();
+    color: white;
+    text-align: center;
+}

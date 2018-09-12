@@ -13,5 +13,23 @@
     @if($bold != null) { font-weight: bold;}
 }
 
+@mixin brandBorder($direction, $size){
+
+    @if($direction == left){
+        border-left: $size solid $brandColor;
+    }
+    @else if($direction == right){
+        border-right: $size solid $brandColor;
+    }
+    @else if($direction == top){
+        border-top: $size solid $brandColor;
+    }
+    @else if($direction == bottom){
+        border-bottom: $size solid $brandColor;
+    }
+    @else{
+        border: $size solid $brandColor;
+    }
+}
 
 
