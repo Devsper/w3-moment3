@@ -1,0 +1,7 @@
+a {
+    color: $linkColor;
+
+    &:focus, &:hover{
+        color: darken($linkColor, 10);
+    }
+}

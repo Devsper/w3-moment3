@@ -1,0 +1,33 @@
+.nav{
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $navHeight;
+
+    .main-nav{
+        
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background: $secondaryColor;
+        justify-content: center;
+
+        li{
+            @include bodyFonts(bold);
+            font-size: 20px;
+        }
+
+        a{
+            display:block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+
+            &:focus, &:hover {
+                color: darken(white, 10);
+            }
+        }
+    }
+}

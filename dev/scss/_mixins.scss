@@ -1,0 +1,17 @@
+@mixin contentPadding(){
+    padding: 15px;
+}
+
+@mixin headingFonts($bold: null){
+    font-family: 'Playfair Display', "Times New Roman", Georgia, serif;
+
+}
+
+@mixin bodyFonts($bold: null){
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+    @if($bold != null) { font-weight: bold;}
+}
+
+
+

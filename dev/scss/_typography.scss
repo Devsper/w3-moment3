@@ -1,15 +1,26 @@
+// Placeholder selector
+%no-margin{
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    @include headingFonts(true);
+    @extend %no-margin;
+    color: white;
+}
+
 h1{
-    color: lightcoral;
+    text-align: center;
+    line-height: $headerHeight - $navHeight; // Centers text vertically grabbing values
 }
 
-h2{
-    color: lightgreen; 
+p{
+    @include bodyFonts();
+    font-size: 17px;
 }
 
-h3{
-    color: lightseagreen;
-}
-
-h4{
-    color: lightpink;
+h2,h3,h4,h5,h6{
+    background: $secondaryColor;
+    display: inline-block;
+    padding: 10px;
 }
