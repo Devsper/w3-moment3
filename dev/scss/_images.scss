@@ -1,4 +1,4 @@
-// Placeholder selector
+// Placeholder selector, wont print to CSS
 %no-margin{
     margin: 0;
 }
@@ -9,7 +9,7 @@
 }
 
 .image-caption{
-    @extend %no-margin;
+    @extend %no-margin; // Extends placeholder selector will print "margin: 0;"
 }
 
 .image-container{
@@ -21,9 +21,9 @@
 }
 
 .image-left{
-    @include brandBorder(right, 15px);
+    @include brandBorder(right, 30px); // Uses mixin to add border, values = border direction and width
 }
 
 .image-right{
-    @include brandBorder(left, 15px);
+    @include brandBorder(left, 15px); // Uses mixin to add border, values = border direction and width
 }

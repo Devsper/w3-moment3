@@ -1,19 +1,23 @@
+// Mixing for adding padding to content elements
 @mixin contentPadding(){
     padding: 15px;
 }
 
-@mixin headingFonts($bold: null){
+// Mixin for font families
+@mixin headingFonts(){
     font-family: 'Playfair Display', "Times New Roman", Georgia, serif;
-
 }
 
+// Mixin for font families body text
 @mixin bodyFonts($bold: null){
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 
+    // If value is provided add bold rule
     @if($bold != null) { font-weight: bold;}
 }
 
-@mixin brandBorder($direction, $size){
+// Creates a border of different sizes
+@mixin brandBorder($direction: false, $size: 5px){
 
     @if($direction == left){
         border-left: $size solid $brandColor;

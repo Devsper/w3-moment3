@@ -32,6 +32,7 @@
         height: auto;
     }
 
+    // Nests selectors for navigation
     .nav{
         position: relative;
 
@@ -41,12 +42,12 @@
             li{
                 width: 100%;
                 text-align: center;
-                border-bottom: 2px solid darken($secondaryColor, 5);
+                border-bottom: 2px solid darken($secondaryColor, 5); // Darkens variable color with 5%
             }
 
             a{
                &:focus, &:hover{
-                   background: darken($secondaryColor, 5);
+                   background: darken($secondaryColor, 5); // Darkens variable color with 5%
                }
             }
         }

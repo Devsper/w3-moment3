@@ -15,13 +15,14 @@ gulp.task('concat-js', function(){
           .pipe(gulp.dest('dist/js/'));  // destination for the new js file
 });
 
+// Task that converts SASS files to CSS
 gulp.task('sass', function(){
-  return gulp.src('dev/scss/**/*.scss')
-          .pipe(sourcemaps.init())
-          .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-          .pipe(rename({suffix: '.min'}))
-          .pipe(sourcemaps.write('/maps'))
-          .pipe(gulp.dest('dist/css/'));
+  return gulp.src('dev/scss/**/*.scss') // src() source of the sass files to use
+          .pipe(sourcemaps.init())      // creates source map to see where the CSS is generated in SASS files
+          .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)) // Compresses CSS and adds error log
+          .pipe(rename({suffix: '.min'})) // adds .min to css file
+          .pipe(sourcemaps.write('/maps'))  // source map folder
+          .pipe(gulp.dest('dist/css/')); // destination of css files
 });
 
 /* Task to copy over html files from the development folder to distribution folder */

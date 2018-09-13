@@ -1,3 +1,5 @@
+// CSS for general elements
+
 *{
     box-sizing: border-box;
 }
@@ -21,5 +23,6 @@ img{
 }
 
 .main{
+    // Mixin for adding padding
     @include contentPadding();
 }

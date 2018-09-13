@@ -1,5 +1,5 @@
 .header{
-    background-color: $brandColor;
-    height: $headerHeight;
+    background-color: $brandColor; // Fetches color from variable
+    height: $headerHeight; // Fetches height value from variable
     position: relative;
 }

@@ -5,17 +5,18 @@
     width: 100%;
     height: $navHeight;
 
+    // Nested selectors within .nav
     .main-nav{
         
         list-style-type: none;
         display: flex;
         margin: 0;
         padding: 0;
-        background: $secondaryColor;
+        background: $secondaryColor; // Color value from variable
         justify-content: center;
 
         li{
-            @include bodyFonts(bold);
+            @include bodyFonts(bold); // Mixin fetches font families, makes it bold
             font-size: 20px;
         }
 
@@ -26,7 +27,7 @@
             text-decoration: none;
 
             &:focus, &:hover {
-                color: darken(white, 10);
+                color: darken(white, 10); // darken color on hover
             }
         }
     }

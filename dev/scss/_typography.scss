@@ -4,13 +4,13 @@
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6{
-    @include headingFonts();
+    @include headingFonts(); // Fetches font families for headings
     color: white;
 }
 
 .h1{
     text-align: center;
-    @extend %no-margin;
+    @extend %no-margin; // Fetches values from placeholder selector
     line-height: $headerHeight - $navHeight; // Centers text vertically grabbing values
 }
 
@@ -20,7 +20,7 @@ p{
 }
 
 .h2,.h3,.h4,.h5,.h6{
-    background: $secondaryColor;
+    background: $secondaryColor; // Color value from variable
     display: inline-block;
     padding: 10px;
 }

@@ -1,19 +1,19 @@
 .footer{
     display: flex;
     justify-content: space-around;
-    background: $footerColor;
-    @include contentPadding();
+    background: $footerColor;   // Fetches color from variable
+    @include contentPadding(); // Mixin for adding padding
     height: 150px;
     width: 100%;
 }
 
 .footer-area{
     width: 20%;
-    border: 2px solid lighten($footerColor, 5);
+    border: 2px solid lighten($footerColor, 5); // Uses color function to lighten a given color
 }
 
 .footer-heading{
-    @include headingFonts();
+    @include headingFonts(); // Mixin fetches font families
     color: white;
     text-align: center;
 }

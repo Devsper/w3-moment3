@@ -1,7 +1,7 @@
 a {
-    color: $linkColor;
+    color: $linkColor; // Fetches color value from variable
 
-    &:focus, &:hover{
-        color: darken($linkColor, 10);
+    &:focus, &:hover{   // Nested pseudo selectors, &:focus = parent:focus (a:focus)
+        color: darken($linkColor, 10);  // Darkens color value with 10%
     }
 }

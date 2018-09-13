@@ -1,8 +1,10 @@
+// Placeholder selector 
 %rec{
-    border: 10px solid $brandColor;
-    background: $secondaryColor;
+    border: 10px solid $brandColor; // Color value from variable
+    background: $secondaryColor; // Color value from variable
 }
 
+// Placeholder selector 
 %elementSize{
     width: 100px;
     height: 100px;
@@ -14,24 +16,24 @@
 }
 
 .circle{
-    @extend %rec;
-    @extend %elementSize;
+    @extend %rec; // Fetches values from placeholder selector 
+    @extend %elementSize; // Fetches values from placeholder selector 
 }
 
 .square{
-    @extend %rec;
-    @extend %elementSize;
+    @extend %rec; // Fetches values from placeholder selector 
+    @extend %elementSize; // Fetches values from placeholder selector 
     border-radius: 50%;
 }
 
 .rectangle{
-    @extend %rec;
+    @extend %rec; // Fetches values from placeholder selector 
     width: 200px;
     height: 100px;
 }
 
 .rhombus{
-    @extend %rec;
+    @extend %rec; // Fetches values from placeholder selector 
     height: 80px;
     width: 80px;
     transform: rotate(45deg);
